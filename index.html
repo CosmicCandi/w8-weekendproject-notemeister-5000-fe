@@ -6,14 +6,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Stylesheets go here. -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="global.css" />
 </head>
 <body>
   <!-- Content goes here. -->
+  <h1 class="text-center">Notemeister 5000<span id="notemeister-tag"></span></h1>
+  <div class="container">
+    <div class="row">
+
+
+      <div id="note-form" class="col-sm-3">
+        <button type="submit" id="show_note_form_button" class="btn btn-primary">Meister a note!</button>
+        <h2 class="create_a_note">Meister a note:</h2>
+        <form class="create_a_note" action="#"><br />
+          <input type="text" class="form-control" placeholder="Username" name="username" /><br />
+          <input type="text" class="form-control" placeholder="Title" name="title" /><br />
+          <textarea name="body" class="form-control" placeholder="Body of your post goes here..."></textarea><br />
+          <input type="text" class="form-control" placeholder="Comma, Separated, Tags" name="tags" /><br />
+          <button type="submit" class="btn btn-success">Create it!</button>
+        </form>
+      </div>
+
+      <div id='note_content' class="col-sm-9">
+        <!-- Dynamically Generated Content Here -->
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts go here. -->
   <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
-  <script type="text/javascript" src="global.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="master.js"></script>
+
 </body>
 </html>
