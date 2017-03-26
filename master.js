@@ -1,3 +1,4 @@
+//Hide the note creation form by default
 $('.create_a_note').hide()
 
 $(document).ready(function(){
@@ -15,7 +16,6 @@ $(document).ready(function(){
     $(document).on('click', '.tag_link', function(ev){
       ev.preventDefault()
       tag_name = $(ev.target).attr('href')
-      console.log($(tag_name).html())
       $('#notemeister-tag').empty().append(`: ${tag_name}`)
       populate_tagged_notes(tag_name)
   })
