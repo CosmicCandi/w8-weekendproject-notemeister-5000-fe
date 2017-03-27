@@ -5,7 +5,6 @@ $(document).ready(function(){
   api_root = "https://jacques-is-a-deadbeat.herokuapp.com/api/"
   tagged_notes_url = api_root + "notes/tag/"
 
-
     //Hide the note creation form by clicking the 'Meister a Note' Button
     $('#show_note_form_button').on('click', function(){
     $('.create_a_note').slideToggle(400)
